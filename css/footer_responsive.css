@@ -1,0 +1,40 @@
+/************* max-width: 1250px 시작 *************/
+@media (max-width: 1250px){}
+/************* max-width: 1250px 끝 *************/
+
+
+
+/************* max-width: 1050px 시작 *************/
+@media (max-width: 1050px){}
+/************* max-width: 1050px 끝 *************/
+
+
+
+/************* max-width: 768px 시작 *************/
+@media (max-width: 768px){
+  .footer .inner{
+    flex-direction: column-reverse;
+    padding: 5rem 1rem;
+    gap: 3.21rem;
+  }
+
+  /* 푸터 상단 (좌측:menu) */
+  .footerMenu{
+    gap: 0.5rem 0;
+  }
+
+  /* 푸터 하단 (좌측:logo, copyright) */
+  .footerLogo{
+    gap: 1.5rem;
+  }
+  .footerLogo li:first-child{ 
+    padding-top: 0.3rem; /* 로고 수평 맞추기 */
+  }
+  .footerLogo li a{
+    width: 6rem;
+  }
+  .copyright{
+    margin-top: 0.8rem;
+  }
+}
+/************* max-width: 768px 끝 *************/

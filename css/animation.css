@@ -1,0 +1,51 @@
+@keyframes slowWave{
+  50%{
+    transform: translateY(-0.3rem);
+  }
+}
+@keyframes slideUp{
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideL2R{
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideL2RArrow{
+  100%{
+    transform: translateX(0.7rem);
+  }
+}
+@keyframes slideWidth{
+  100%{
+    opacity: 1;
+    width: var(--recResponwidth);
+  }
+}
+@keyframes spread{
+  100%{
+    width: 105%;
+  }
+}
+@keyframes stroke{
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes opacity{
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes rotate{
+  40%{
+    transform: rotate(90deg); 
+  }
+  100%{
+    transform: rotate(90deg); 
+  }
+}

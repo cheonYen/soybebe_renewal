@@ -1,0 +1,105 @@
+@keyframes click{
+  100%{
+    opacity: 1;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@keyframes clickin{ 
+  60%{
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    border: 40px solid var(--soyYel);
+    opacity: 1; 
+  }
+}
+@keyframes clickin6{ 
+  60%{
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    border-radius: 60px;
+    border: 40px solid var(--soyYel);
+    opacity: 1; 
+  }
+}
+
+.menu ul li:nth-child(2),
+.careList li:nth-child(1) a,
+.footerMenu li:nth-child(1) a,
+.product:nth-child(1) a{
+  position: relative;
+}
+
+.menu ul li:nth-child(2)::before,
+.careList li:nth-child(1) a::before,
+.footerMenu li:nth-child(1) a::before,
+.product:nth-child(1) a::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--soyYel);
+  opacity: 0;
+}
+.menu ul li:nth-child(2)::before,
+.footerMenu li:nth-child(1) a::before{
+  width: 0rem;
+  height: 0rem;
+  border-radius: 100%;
+  z-index: -1;
+  animation: click 1s ease infinite;
+}
+.careList li:nth-child(1) a::before,
+.product:nth-child(1) a::before{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.careList li:nth-child(1) a::before{
+  border-radius: 220px;
+  animation: clickin 2s ease infinite;
+}
+.product:nth-child(1) a::before{
+  border-radius: 50px;
+  animation: clickin6 2s ease infinite;
+}
+
+.product:nth-child(1) a.invisible::before{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .menu ul li:nth-child(2)::before,
+  .careList li:nth-child(1) a::before{
+    display: none;
+  }
+  .menu ul li:nth-child(2) a,
+  .careList li:nth-child(1) a i{
+    position: relative;
+  }
+  .careList li:nth-child(1) a i{
+    overflow: hidden;
+  }
+  .menu ul li:nth-child(2) a::after, 
+  .careList li:nth-child(1) a i::before,
+  .product:nth-child(1) a::before{
+    content: '';
+    width: 0rem;
+    height: 0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--soyYel);
+    border-radius: 100%;
+    animation: click 1s ease infinite;
+    opacity: 0;
+  }
+  .product:nth-child(1) a::before{
+    top: 35%;
+  }
+  .menu ul li:nth-child(2) a::after{
+    left: 25%;
+  }
+}

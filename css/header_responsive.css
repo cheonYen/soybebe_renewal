@@ -1,0 +1,103 @@
+/************* max-width: 1250px 시작 *************/
+@media (max-width: 1250px){
+  /***** common 시작 *****/
+  .inner, 
+  .goToStore,
+  .careLine,
+  .faq{
+    max-width: 1050px;
+    height: 100%;
+    margin: auto;
+  }
+  h3{
+    font-size: 1.63rem;
+    line-height: 155%;
+  }
+  .heading p,
+  .question span{
+    font-size: 1.31rem;
+    line-height: 165%;
+    letter-spacing: 0.48px;
+  }
+  /***** common 끝 *****/
+
+  .header{
+    padding: 1.5rem;
+    justify-content: space-between;
+  }
+  .header.active{
+    background-color: var(--soyBlue);
+  }
+  .menu{
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+    right: -80%;
+    background-color: #fff;
+    transition: .3s;
+  }
+  .menu.open{
+    display: block;
+    right: 0;
+  }
+  .menu::after{}
+  .menu ul{
+    flex-direction: column;
+  }
+  .menu ul li a:before{
+    width: 100%;
+    height: 1px;
+    background-color: var(--soyGray3);
+  } 
+  @media (hover:hover){
+    .menu ul li a:before{
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+  .trigger{
+    display: block;
+  }
+}
+/************* max-width: 1250px 끝 *************/
+
+
+
+/************* max-width: 1050px 시작 *************/
+@media (max-width: 1050px){}
+/************* max-width: 1050px 끝 *************/
+
+
+
+/************* max-width: 768px 시작 *************/
+@media (max-width: 768px){
+  .header{
+    height: 60px;
+    padding: 0 1rem;
+    background-color: #fff;
+  }
+  .logo a{
+    width: 65%;
+  }
+  .logo a img{
+    width: 100%;
+    vertical-align: middle;
+  }
+  .menu{
+    width: 40%;
+  }
+  .menu ul li a{
+    height: 55px;
+    padding: 1.667rem 1.167rem;
+    display: block;
+  }
+  .trigger{
+    width: 1.5rem;
+    height: 1.333rem;
+  }
+  .trigger span{
+    height: 2px;
+  }
+}
+/************* max-width: 768px 끝 *************/

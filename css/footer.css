@@ -1,0 +1,63 @@
+.footer{
+  width: 100%;
+  height: fit-content;
+  border-top: 2px solid var(--soyGray3);
+}
+.footer .inner{
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+/**************** 푸터 좌측 ****************/
+.footerInfo{}
+
+.footerLogo{
+  display: flex;
+  gap: 2rem;
+}
+.footerLogo li{}
+.footerLogo li a{
+  display: block;
+}
+.footerLogo li a img{
+  width: 100%;
+}
+
+.copyright{
+  margin-top: 2rem;
+}
+
+
+/**************** 푸터 우측 ****************/
+.footerMenuWrap{
+  width: 290px;
+}
+.footerMenu{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 0;
+}
+.footerMenu li{
+  flex: 50%;
+}
+.footerMenu li a{
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+.footerMenu li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--soyBlue);
+  position: absolute;
+  bottom: 0;
+  left: -3%;
+  transition: .3s;
+}
+@media (hover:hover){
+  .footerMenu li a:hover::after{
+    width: 108%;
+  }
+}

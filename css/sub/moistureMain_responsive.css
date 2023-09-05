@@ -1,0 +1,245 @@
+/************* max-width: 1250px 시작 *************/
+@media (max-width: 1250px){
+  /******************** mainVisual 시작 ********************/
+  .mainVisual{
+    width: 40%;
+    background: url(../../img/sub/moisture/mainVisual1250.png) no-repeat;
+    background-size: 190%;
+    background-position: 60% 100%;
+  }
+  .mainVisual .inner{
+    justify-content: left;
+  }
+  .mainVisual .heading{
+    margin: 60px 0 0 1.5rem;
+    transition: .6s;
+  }
+
+  /* 스크롤 이벤트 round 클래스 추가 */
+  .mainVisual.round{
+    background-size: 180%;
+    background-position: 70% 100%;
+  }
+  .mainVisual.round .heading{
+    margin-top: 400px;
+  }
+  /******************** mainVisual 끝 ********************/
+
+  /******************** productContainer 시작 ********************/
+  .productContainer{
+    width: 60%;
+    padding: 60px 80px 0 60px;
+  }
+  .productContainer ul{
+    gap: 2rem 1rem;
+  }
+  .product{}
+
+  /* 제품 인포 시작 */
+  .productInfo{
+    height: 98px;
+    padding-left: 1.4rem; 
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  /******************** productContainer 끝 ********************/
+} 
+/************************************************/
+/************* max-width: 1250px 끝 *************/
+/************************************************/
+
+
+
+/**************************************************/
+/************* max-width: 1050px 시작 *************/
+/**************************************************/
+@media (max-width: 1050px){
+  /****** mainVisual 시작 ******/
+  .main{
+    margin: 80px 0 130px;
+    flex-direction: column;
+  }
+  .mainVisual{
+    width: 100%;
+    height: 35vh;
+    background: url(../../img/sub/moisture/mainVisual1050.png) no-repeat;
+    background-size: cover;
+    background-position: 0% 50%; 
+    border-radius: 0;
+    z-index: 1;
+  }
+  .mainVisual:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--soyBlue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s;
+  }
+  /* 스크롤 이벤트 round 클래스 추가 */
+  .mainVisual.round{
+    height: 18vh;
+    background-size: cover;
+    background-position: 0% 50%; 
+    border-radius: 0 0 3.75rem 3.75rem;
+  }
+  .mainVisual.round:before{
+    opacity: 1;
+  }
+  .mainVisual.round .heading{
+    margin: 90px auto 0; 
+    display: flex; 
+    align-items: center;
+    gap: 2rem;
+    z-index: 1;
+  }
+  .mainVisual.round .heading h2{
+    font-size: var(--h3);
+  }
+  .mainVisual.round svg.waveCon{
+    top: 50px;
+  } 
+  /* 스크롤 이벤트 round 클래스 추가 끝 */
+
+  /* svg 시작 */
+  .mainVisual.round .effectContainer{
+    z-index: 0;
+    opacity: 0.5;
+  }
+  svg.waveCon{
+    top: 65%;
+  }
+  /* svg 끝 */
+  /****** mainVisual 끝 ******/
+
+  /****** productContainer 시작 ******/
+  .productContainer{
+    width: 100%;
+    padding: 60px 2rem 0;
+  }
+  .productContainer ul{
+    width: 100%;
+    gap: 2rem 1rem;
+  }
+  .product{
+    width: 30%;
+    height: fit-content;
+  }
+    
+  /* 제품 인포 시작 */
+  .productInfo{
+    padding: 0 1rem;
+    position: relative;
+  }
+  /****** productContainer 끝 ******/
+}
+/************************************************/
+/************* max-width: 1050px 끝 *************/
+/************************************************/
+
+
+
+/*************************************************/
+/************* max-width: 768px 시작 *************/
+/*************************************************/
+@media (max-width: 768px){
+  /****** mainVisual 시작 ******/
+  .main{
+    margin: 60px 0 130px;
+  }
+  .mainVisual{
+    height: 40vh;
+    background: url(../../img/sub/moisture/mainVisual.png) no-repeat;
+    background-size: 140%;
+    background-position: 62% 75%;
+  }
+  .mainVisual .heading{
+    margin: 60px auto 0;
+    text-align: center;
+  }
+  .mainVisual .heading h5{
+    animation: introUp .8s ease-in-out .2s forwards; 
+  }
+  .mainVisual .heading h2{
+    animation: introUp .8s ease-in-out .3s forwards;
+  } 
+  @keyframes introUp{
+    0%{
+      transform: translateY(30px); 
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* 스크롤 이벤트 round 클래스 추가 */
+  .mainVisual.round{
+    height: 110px;
+    background-size: 140%;
+    background-position: 62% 75%; 
+    border-radius: 0 0 3.75rem 3.75rem;
+  }
+  .mainVisual.round .heading{
+    margin: 68px auto 0;
+    flex-direction: column;
+    gap: 0;
+  }
+  .mainVisual.round .heading h2{
+    font-size: var(--h2);
+  }
+  .mainVisual.round .heading h5{
+    display: none;
+  }
+  .mainVisual.round svg.waveCon{
+    top: 80px;
+  } 
+  /* 스크롤 이벤트 round 클래스 추가 끝 */
+
+  /* svg 시작 */
+  .effectContainer{
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+  svg.waveCon{
+    top: 35%;
+  }
+  /* svg 끝 */
+  /****** mainVisual 끝 ******/
+
+  /****** productContainer 시작 ******/
+  .productContainer{
+    padding: 2rem 1rem 100px;
+  }
+  .productContainer ul{
+    gap: 1.5rem 2%;
+  }
+  .product{
+    width: 48%;
+    border-radius: 1.5rem;
+  }
+    
+  /* 제품 인포 시작 */
+  .productInfo{
+    height: fit-content;
+    padding: 1rem;
+    position: relative;
+  }
+  .productInfo .heading .tag span:nth-child(3){
+    display: none;
+  }
+  .productInfo button{
+    display: none;
+  }
+  /* 제품 인포 끝 */
+  /****** productContainer 끝 ******/
+}
+/***********************************************/
+/************* max-width: 768px 끝 *************/
+/***********************************************/

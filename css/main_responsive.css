@@ -1,0 +1,469 @@
+/************* max-width: 1250px 시작 *************/
+@media (max-width: 1250px){   
+  /***** mainVisual 시작 *****/
+  .mainVisual{
+    background-position: 60% center;
+  }
+  /***** mainVisual 끝 *****/
+
+
+  /***** goToStore 시작 *****/
+  .goToStore ul li{
+    height: 210px;
+  }
+  /***** goToStore 끝 *****/
+
+
+  /***** mediaZone 시작 *****/
+  /** 미디어 카테고리 시작 **/
+  .mediaCategory li a{
+    height: 56px;
+    line-height: 56px;
+    font-size: var(--h4);
+  }
+  /** 미디어 카테고리 끝 **/
+  /** 미디어 콘텐츠 시작 **/
+  .videoContainer{
+    height: fit-content;
+    gap: 1.5rem;
+  }
+  /* 큰 비디오 시작 */
+  .bigVideoWrap{
+    width: 80%;
+    height: 500px;
+  }
+  .videoArea{
+    width: 100%;
+    height: 85%;
+  }
+  .videoInfo{
+    height: 15%;
+    padding: 1.88rem 2.5rem;
+  }
+  .videoInfo h4{
+    font-size: var(--h5);
+  }
+  /* 큰 비디오 끝 */
+  /* 비디오 탭 리스트 시작 */
+  .videoTab{
+    width: 20%;
+    height: 500px;
+  }
+  .thumb1 li:nth-child(1) a,
+  .thumb1 li:nth-child(2) a,
+  .thumb1 li:nth-child(3) a,
+  .thumb2 li:nth-child(1) a,
+  .thumb2 li:nth-child(2) a,
+  .thumb2 li:nth-child(3) a{
+    background-size: cover; 
+  }
+  /** 미디어 콘텐츠 끝 **/
+  /***** mediaZone 끝 *****/
+
+
+  /***** faq 시작 *****/
+  .tabMenu{
+    width: 90%;
+  }
+  /** faq 질답 리스트 시작 **/
+  .faqWrap{
+    padding: 1rem 2.5rem;
+  }
+  /** faq 질답 리스트 끝 **/
+  /***** faq 끝 *****/
+} 
+/************************************************/
+/************* max-width: 1250px 끝 *************/
+/************************************************/
+
+
+
+/**************************************************/
+/************* max-width: 1050px 시작 *************/
+/**************************************************/
+@media (max-width: 1050px){
+  /***** gotostore 시작 *****/
+  .goToStore ul{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .goToStore ul li{
+    width: 80%;
+    margin: auto;
+  }
+  /* 네이버 스토어 호버애니 보틀 */
+  .goToStore ul li:first-child::before{
+    right: 11.5%;
+  }
+  /* 네이버 스토어 호버애니 튜브 */
+  .goToStore ul li:first-child::after{
+    right: 17.5%;
+  }
+  /* 이데이몰 호버애니 돋보기 */
+  .goToStore ul li:last-child::before{
+    right: -120px;
+  }
+  .goToStore ul li:last-child:hover::before{
+    right: 7%;
+  }
+  /***** gotostore 끝 *****/
+}
+/************************************************/
+/************* max-width: 1050px 끝 *************/
+/************************************************/
+
+
+
+/*************************************************/
+/************* max-width: 768px 시작 *************/
+/*************************************************/
+@media (max-width: 768px){
+  main{
+    overflow: hidden;
+  }
+  /* 중복 */
+  .mainVisual .heading,
+  .goToStore ul li,
+  .collaboBanner .heading,
+  .careList,
+  .mediaCategory li,
+  .bigVideoWrap, .videoTab{
+    width: 100%;
+  }
+  .goToStore,
+  .collaboBanner .inner,
+  .mediaZone .inner,
+  .faq{
+    padding: 5rem 1rem;
+  }
+  
+
+  /***** mainVisual 시작 *****/
+  .mainVisual{
+    margin-top: 60px;
+    height: 60vh;
+    background: url(../img/main-visual-m.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-right: 1rem;
+  }
+  .mainVisual .heading{
+    display: flex; 
+    flex-direction: row-reverse;
+    top: 25%;
+    text-align: left;
+    color: #fff;
+  }
+  .mainVisual .heading div{
+    width: 50%;
+  }
+  .mainVisual .heading img{
+    width: 180px;
+  }
+  /***** mainVisual 끝 *****/
+
+
+  /***** gotostore 시작 *****/
+  .goToStore ul li{
+    height: fit-content;
+    padding: 2.5rem 3rem;
+  }
+  .goToStore ul li br{
+    display: none;
+  }
+  .goToStore ul li h3{
+    width: 70%;
+    font-size: var(--h4);
+  }
+  /** 네이버 스토어 바로가기 시작 **/
+  .goToStore ul li:first-child{
+    background: url(../img/bg-naver-m.png) no-repeat;
+    background-position: right 10% top 48%;
+    background-size: 25%;
+    background-color: #00C300;
+  }
+  /** 네이버 스토어 바로가기 끝 **/
+  /** 이데이몰 바로가기 시작 **/
+  .goToStore ul li:last-child{
+    background: url(../img/bg-eday-m.png) no-repeat;
+    background-position: right -8% top 50%;
+    background-size: 38%;
+    background-color: var(--soyBlue);
+  }
+  /** 이데이몰 바로가기 끝 **/
+
+  /* 스토어 바로가기 호버요소 삭제 */
+  .goToStore ul li:first-child::before,
+  .goToStore ul li:first-child::after,
+  .goToStore ul li:last-child::before{
+    content: none;
+  }
+
+  /* 중복 바로가기 버튼 시작 */
+  .storeBtn i{
+    width: 1.167rem;
+    height: 1.167rem; 
+  }
+  .storeBtn i img{
+    width: 28px; 
+    transform: translateX(-1.167rem);
+  }
+  .storeBtn span{
+    margin-top: 0.1rem;
+    font-size: 1rem;
+  }
+  /* 중복 바로가기 버튼 끝 */
+  /***** gotostore 끝 *****/
+
+
+  /***** collaboBanner 시작 *****/
+  .collaboBanner{
+    height: 70vh;
+    background: url(../img/banner-collabo-m.png) no-repeat;
+    background-size: cover;
+    background-position: right 70% bottom 0%;
+  }
+  .collaboBanner .heading{
+    margin: 0 auto 2.2rem;
+    text-align: center;  
+  }
+  .collaboBanner .heading img{
+    width: 60%;
+    margin-bottom: 0.5rem;
+  }
+  .collaboBtn{
+    width: fit-content;
+    height: 35px;
+    margin: auto;
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+  .collaboBtn span{
+    font-size: var(--h5);
+  }
+  .collaboBtn i{
+    width: 1rem;
+    height: 1rem;
+  }
+  .collaboBtn i img{
+    width: 2rem;
+    transform: translateX(-1rem);
+  }
+  /***** collaboBanner 끝 *****/
+
+
+  /***** careLine 시작 *****/
+  .careLine{
+    padding: 5rem 0;
+  }
+  .careLine .heading{
+    margin-bottom: 1.5rem;
+  }
+  .careLine .heading p{
+    width: 80%;
+    margin: 1rem auto 0;
+    font-size: 1rem;
+  }
+  .careList{}
+
+  /* slick slide 커스텀 시작 */
+  .careList.slide .slick-list{
+    padding: 0 0 0 1rem;
+  }
+  /* slick slide 커스텀 끝 */
+
+  .careList li{
+    height: fit-content;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .careList li:nth-child(1),
+  .careList li:nth-child(2),
+  .careList li:nth-child(3){
+    background: none;
+  }
+  .careList li a{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .careInfo{
+    display: none;
+  }
+
+  /* careInfo 대용 */
+  .careList li a i{
+    width: 100%;
+    height: 88%;
+    display: block;
+    border-radius: 10rem;
+    box-shadow: 0px 0px 12px 2px rgba(35, 209, 236, 0.1);
+  }
+  .careList li:nth-child(1) a i{
+    background: url(../img/care-1-moisture.png) no-repeat;
+    background-size: cover;
+  }
+  .careList li:nth-child(2) a i{
+    background: url(../img/care-2-sun.png) no-repeat;
+    background-size: cover;
+  }
+  .careList li:nth-child(3) a i{
+    background: url(../img/care-3-life.png) no-repeat;
+    background-size: cover; 
+  }
+  .careList li a p{
+    font-family: 'SeoulNamsan-C', sans-serif;
+    text-align: center;
+    font-size: var(--h5);
+    font-weight: 600;
+  }
+
+  /* 케어라인 호버 삭제 */
+  @media (hover:hover){
+    .careLine li:hover{
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+  /***** careLine 끝 *****/
+
+
+  /***** mediaZone 시작 *****/
+  .mediaZone .inner{}
+  /** 미디어 카테고리 시작 **/
+  .mediaCategory{
+    flex-direction: column;
+    border-radius: 1.5rem;
+  }
+  .mediaCategory li a{
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-size: var(--h5);
+  }
+  .activeCatecory{
+    height: 50%;
+  }
+  /** 미디어 카테고리 끝 **/
+
+  /** 미디어 콘텐츠 시작 **/
+  .videoContainer{
+    height: fit-content;
+    margin: 2rem 0 3rem;
+    flex-direction: column;
+  }
+  /* 큰 비디오 시작 */
+  .bigVideoWrap{
+    height: fit-content;
+    border-radius: 30px;
+  }
+  .videoArea{
+    height: 280px;
+  }
+  .videoInfo{
+    height: 75px;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .videoInfo h4{
+    font-size: 1rem;
+  }
+  /* 큰 비디오 끝 */
+  /* 비디오 탭 리스트 시작 */
+  .videoTab{
+    height: fit-content;
+  }
+  .videoTab ul{
+    flex-direction: row;
+  }
+  .videoTab ul li{
+    width: 32%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .videoTab ul li a{
+    height: 90px;
+    border-radius: 20px;
+  }
+  .videoTab ul li .play{
+    padding: 0;
+    justify-content: center;
+  }
+  .videoTab ul li .play img{
+    width: 3rem;
+  }
+  .videoTab ul li .play span{
+    display: none;
+  }
+
+  /* 반응형 때 나타나는 썸네일 타이틀 */
+  .videoTab p{
+    display: block;
+    padding: 0 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /** 미디어 콘텐츠 끝 **/
+  /* 더 많은 영상보기 버튼 시작 */
+  .moreBtn{
+    clear: right;
+    margin: auto;
+  }
+  /* 더 많은 영상보기 버튼 끝 */
+  /***** mediaZone 끝 *****/
+
+
+  /***** faq 시작 *****/
+  .faq .heading p{
+    font-size: 1rem;
+  }
+  .tabMenu{
+    width: 95%; 
+    height: 40px;
+    line-height: 40px;
+  }
+  .tabMenu li a{
+    font-size: var(--h5);
+  }
+  /* faq 질답 리스트 시작 */
+  .faqWrap{
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 30px;
+  }
+  /* 중복 */
+  .question{
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+  }
+  .question span{
+    font-size: var(--h5);
+  }
+  .question p{
+    font-size: 1rem;
+  }
+  .question i{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .answer{
+    padding: 0 1.2rem 0 3.25rem;
+  }
+  .answer.open{
+    height: fit-content;
+    padding: 1rem 1.2rem 1rem 3.25rem;
+  }
+  .faqWrap ul li:last-child .answer{
+    border-radius: 0 0 20px 20px; 
+  }
+  /***** faq 끝 *****/
+}
+/***********************************************/
+/************* max-width: 768px 끝 *************/
+/***********************************************/

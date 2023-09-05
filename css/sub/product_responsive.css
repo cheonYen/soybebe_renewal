@@ -1,0 +1,407 @@
+/************* max-width: 1875px 시작 *************/
+@media (max-width: 1875px){
+  :root{
+    --recResponwidth: 60%;
+  }
+  /***** recommend 시작 *****/
+  .recommend .inner{
+    padding: 60px 10% 130px 0;
+  } 
+  /***** recommend 끝 *****/
+} 
+/************************************************/
+/************* max-width: 1875px 끝 *************/
+/************************************************/
+
+
+/**************************************************/
+/************* max-width: 1250px 시작 *************/
+/**************************************************/
+@media (max-width: 1250px){
+  /***** recommend 시작 *****/
+  .recommend .inner{
+    padding: 60px 2rem 130px 0;
+  }
+  /***** recommend 끝 *****/
+
+
+  /***** keypoint 시작 *****/
+  .keypoint .inner{
+    padding: 2%;
+  }
+  /* pointContainer 시작 */
+  .pointContainer{
+    gap: 1.5%;
+  }
+  .pointContainer > li{
+    padding: 1.5rem 1.3rem;
+    border-radius: 32px;
+  }
+  /* pointContainer 끝 */
+  /***** keypoint 끝 *****/
+
+  /***** factCheck 시작 *****/
+  .factList{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem 2%;
+    text-align: center;
+  }
+  /***** factCheck 끝 *****/
+} 
+/************************************************/
+/************* max-width: 1250px 끝 *************/
+/************************************************/
+
+
+
+/**************************************************/
+/************* max-width: 1050px 시작 *************/
+/**************************************************/
+@media (max-width: 1050px){
+  :root{
+    --recResponwidth: 53%;
+  }
+  /***** mainVisual 시작 *****/
+  .mainVisual{
+    background-position: 30% center;
+  }
+  /***** mainVisual 끝 *****/
+
+  /***** recommend 시작 *****/
+  .recommend .inner{
+    padding: 60px 0 130px;
+  }
+  /* textWrap 시작 */
+  .recommend .textWrap{
+    margin: 0;
+  }
+  /***** recommend 끝 *****/
+
+  /***** factCheck 시작 *****/
+  .factCheck .inner{
+    padding: 130px 0;
+  }
+  /***** factCheck 끝 *****/
+
+  /***** howToUse 시작 *****/
+  .howToUse .inner{
+    padding: 130px 60px;
+  }
+  .howToUse .tutorial{
+    padding: 0;
+  }
+  .howToUse .tutorial li{
+    width: 33%;
+    height: 400px;
+  }
+  .howToUse .tutorial li .imgWrap{
+    width: 85%;
+    height: 80%;
+    margin: 0 auto 1rem;
+  }
+  .howToUse .tutorial li p{
+    padding: 1rem;
+  }
+  .howToUse .tutorial li p br{
+    display: none;
+  }
+  /***** howToUse 끝 *****/
+}
+/************************************************/
+/************* max-width: 1050px 끝 *************/
+/************************************************/
+
+
+
+/*************************************************/
+/************* max-width: 768px 시작 *************/
+/*************************************************/
+@media (max-width: 768px){
+  :root{
+    --recResponwidth: 100%;
+  }
+
+  /* 중복 */
+  .mainVisual .heading,
+  .goToStoreBtn,
+  .pointContainer > li,
+  .pointContainer > li.focus,
+  .factList,
+  .howToUse .tutorial li{
+    width: 100%;
+  }
+  .inner{
+    padding: 0 1rem;
+  }
+ .recommend .inner,
+ .keypoint .inner,
+ .factCheck .inner,
+ .howToUse .inner{
+    padding: 2.5rem 1rem;
+  }
+  .detail{
+    margin-top: 3rem;
+    text-align: left;
+  }
+
+  
+  /***** mainVisual 시작 *****/
+  .mainVisual{
+    height: fit-content;
+    background: url(../../img/sub/product/mainVisual_01-atoSoothingGel-m.png) no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .mainVisual .inner{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  /* hashTagContainer 시작 */
+  .hashTagContainer{
+    margin: 2rem auto 1rem;
+  }
+  .hashTagContainer .tag{
+    background-color: #fff;
+    color: var(--soyBlue);
+  }
+  /* hashTagContainer 끝 */
+  /* heading 시작 */
+  .mainVisual .heading{
+    margin: 0 auto 2rem;
+    color: #fff;
+    text-align: center;
+  }
+  .mainVisual .heading h2{
+    color: var(--soyYel);
+  }
+  .mainVisual .heading p br{
+    display: none;
+  }
+  .mainVisual .heading p{
+    margin: 0;
+  }
+  /* heading 끝 */
+  /* infographic 시작 */
+  .infographic{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-bottom: 2rem;
+  }
+
+  .infographic li{
+    width: 30%;
+    height: 130px;
+    padding: 0.2rem 0.5rem;
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+    border-radius: 2rem;
+  }
+  .infographic li i{
+    margin: 0.5rem auto 0.8rem;
+    background-color: var(--shadow1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+  }
+  .infographic li i img{
+    transform: scale(0.8);
+  }
+  /* infographic 끝 */
+
+  /* goToStoreBtn 시작 */
+  .goToStoreBtn{
+    display: none;
+    height: fit-content;
+    margin: 2rem 0 3rem;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .storeBtn{
+    width: 80%;
+    height: 100%;
+  }
+  .storeBtn i img{
+    width: calc(1.13rem * 2);
+  }
+  /* goToStoreBtn 끝 */
+  /***** mainVisual 끝 *****/
+
+  
+  /***** breadCrumbs 시작 *****/
+  .breadCrumbs{
+    border-bottom: 1px solid var(--soyGray3);
+  }
+  .breadCrumbs .inner > ul > li{
+    padding: 0.5rem 1rem;
+  }
+  .breadCrumbs .inner > ul > li::before{
+    width: 1px;
+    left: 107%;
+  }
+  .selectMenu div i{
+    display: none;
+  }
+  /***** breadCrumbs 끝 *****/
+
+  /***** recommend 시작 *****/
+  .recommend .inner{
+    flex-direction: column;
+    gap: 5%;
+  }
+  .recommend .visualWrap{
+    height: 300px;
+    border-radius: 30rem;
+  }
+  /* textWrap 시작 */
+  .recommend .textWrap{
+    padding-top: 2rem;
+  }
+  /* 헤딩 시작 */
+  .recommend .heading{
+    text-align: center;
+  }
+  .recommend .heading h2 strong::before{
+    height: 106%;
+    top: -3px;
+    left: -3px;
+    border-radius: 5px;
+  }
+  /* 헤딩 끝 */
+  /* 체크리스트 시작 */
+  .recommend .checkList{
+    display: flex;
+    flex-direction: column;
+  }
+  .recommend .checkList li{
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .recommend .checkList li:nth-child(1){
+    order: 2;
+  }
+  .recommend .checkList li:nth-child(2){
+    order: 3;
+  }
+  .recommend .checkList li:nth-child(3){
+    order: 4;
+  }
+  .recommend .checkList li:nth-child(4){
+    order: 1;
+  }
+  .checkmarkStoke{
+    transform: scale(0.45) translate(-90%, -85%);
+  }
+
+  /***** recommend 끝 *****/
+
+  /***** keypoint 시작 *****/
+  /* pointContainer 시작 */
+  .pointContainer{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .pointContainer > li{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+  }
+  .pointContainer li h3{
+    margin-left: auto;
+  }
+  .pointContainer li h3 br{
+    display: none;
+  }
+  .pointContainer > li span.badge{
+    margin: 0;
+  }
+  .pointContainer > li span.badge > span{
+    display: none;
+  }
+  /* focus 클래스 추가 */
+  .pointContainer > li.focus{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pointContainer > li.focus h3{
+    margin: 1rem 0;
+  }
+  .pointContainer .focus .infoBox p{
+    margin-bottom: 1rem;
+  }
+  .pointContainer li:nth-child(2).focus .infoBox,
+  .pointContainer li:nth-child(3).focus .infoBox,
+  .pointContainer li:nth-child(4).focus .infoBox{
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+  }
+  .pointContainer li:nth-child(2).focus .infoBox p,
+  .pointContainer li:nth-child(4).focus .infoBox p,
+  .pointContainer li:nth-child(4).focus .infoBox .imgBox,
+  .pointContainer li:nth-child(3).focus .infoBox li{
+    width: 100%;
+  }
+  .pointContainer li:nth-child(4).focus .infoBox .imgBox{
+    height: 180px;
+  }
+
+  .pointContainer li:nth-child(3).focus .infoBox li{
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+  }
+  .pointContainer li:nth-child(3).focus .infoBox li i{
+    margin: 0;
+  }
+  /***** keypoint 끝 *****/
+
+  /***** factCheck 시작 *****/
+  .factCheck .heading{
+    margin-bottom: 3rem;
+  }
+  .factList{
+    gap: 5rem auto;
+  }
+  .factList li{
+    width: 45%;
+  }
+  .factList li i{
+    width: 120px;
+    height: 120px;
+  }
+  .factList li h5{
+    font-size: 1rem;
+  }
+  /***** factCheck 시작 *****/
+
+
+  /***** howToUse 시작 *****/
+  .howToUse .tutorial{
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .howToUse .tutorial li{
+    height: fit-content;
+  }
+  .howToUse .tutorial li .imgWrap{
+    width: 250px;
+    height: 250px; 
+  }
+  .howToUse .tutorial li .imgWrap img{
+    width: 100%;
+    height: auto; 
+  }
+  /***** howToUse 끝 *****/
+}
+/***********************************************/
+/************* max-width: 768px 끝 *************/
+/***********************************************/

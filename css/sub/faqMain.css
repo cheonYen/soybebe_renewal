@@ -1,0 +1,140 @@
+/* 메인 중복 */
+.main{
+  width: 100%;
+}
+.faq, .faqWrap, 
+.activeTab,
+.question p, .question i, .question span, 
+.answer{
+  transition: .3s;
+}
+
+
+/********************** faq 시작 **********************/
+.faq{
+  max-width: 1200px;
+  margin: auto;
+  padding: 150px 0;
+}
+.faq .heading{}
+.faq .heading h2{}
+.faq .heading p{}
+
+.tabWrap{}
+.tabMenu{
+  width: 780px;
+  height: 56px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  line-height: 56px;
+  border-radius: 50px;
+  box-shadow: 0 0 12px 2px rgba(35, 209, 236, 0.3);
+  position: relative;
+}
+.tabMenu li{
+  width: calc(100%/3);
+}
+.tabMenu li.active a{
+  color: #fff;
+  font-weight: 800;
+}
+.tabMenu li a{
+  width: 100%;
+  height: 100%;
+  margin-top: 0.2rem;
+  display: block;
+  font-size: var(--h4);
+  font-weight: 500;
+}
+.activeTab{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 60px;
+  background-color: var(--soyBlue);
+  z-index: -1;
+}
+
+/* faq 질답 리스트 시작 */
+.faqWrap{
+  width: 100%;
+  margin-top: 2.5rem;
+  padding: 2.94rem 3.75rem;
+  border-radius: 50px;
+  box-shadow: 0 0 12px 2px rgba(35, 209, 236, 0.3);
+}
+.faqWrap ul{}
+.faqWrap ul li{}
+#moisture{}
+#sun{}
+#sun,
+#life{
+  display: none;
+}
+
+/* 중복 */
+.question{
+  padding: 1.25rem 1.88rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.75rem;
+  cursor: pointer;
+}
+.faqWrap ul li:not(:last-child) .question{
+  border-bottom: 1px solid var(--soyGray2);
+}
+.question span{
+  font-size: var(--h4);
+  font-weight: 800;
+  padding-top: 0.2rem;
+}
+.question p{
+  width: 100%;
+  font-size: var(--h5);
+  font-weight: 500;
+}
+.question i{
+  width: 1.88rem;
+  height: 1.88rem;
+  opacity: 0.4;
+}
+.question i img{
+  width: 100%;
+}
+
+/* 자주 찾으시는 질문 호버 */
+@media (hover:hover){
+  .question.open span, /* 오픈 추가 */
+  .question:hover span,
+  .question:hover p{
+    color: var(--soyBlue);
+  }
+  .question:hover i{
+    opacity: 1;
+  }
+}
+
+.answer{
+  height: 0;
+  padding: 0 7.13rem;
+  background-color: var(--soyBlue-L);
+  overflow: hidden;
+}
+.answer.open{
+  height: fit-content;
+  padding: 2rem 7.13rem;
+}
+.answer p{}
+
+/* 오픈 추가 */
+.question.open i{
+  transform: rotate(-180deg);
+  opacity: 1;
+}
+
+/* faq 질답 리스트 끝 */
+/********************** faq 끝 **********************/

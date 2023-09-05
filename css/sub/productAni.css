@@ -1,0 +1,98 @@
+/************** 중복 **************/
+.keypoint .heading,
+.factCheck .heading,
+.factList li,
+.howToUse .tutorial li{
+  opacity: 0;
+  transform: translateY(5rem);
+}
+/************** 중복 **************/
+
+
+/************** mainVisual 시작 **************/
+/* 해시태그 */
+.hashTagContainer .tag:nth-child(1){animation: slowWave 0.8s cubic-bezier(0.620, -0.215, 0.450, 1.205) forwards;}
+.hashTagContainer .tag:nth-child(2){animation: slowWave 0.8s cubic-bezier(0.620, -0.215, 0.450, 1.205) forwards 0.2s;}
+.hashTagContainer .tag:nth-child(3){animation: slowWave 0.8s cubic-bezier(0.620, -0.215, 0.450, 1.205) forwards 0.4s;}
+
+/* 헤딩 */
+.mainVisual .heading h2{animation: slideL2R 1s ease forwards 0.2s;}
+.mainVisual .heading p{animation: slideL2R 1s ease forwards 0.35s;}
+/************** mainVisual 끝 **************/
+
+
+/************** recommend 끝 **************/
+/* 비주얼 */
+.recommend .visualWrap.slideWidth{
+  animation: slideWidth 1s forwards;
+}
+
+/* 헤딩 */
+.recommend .heading h2 strong.highlight::before{
+  animation: spread 0.25s ease forwards;
+}
+
+/* 체크 애니메이션 */
+.recommend .checkList li:nth-child(1) .checkmarkStoke.checking{animation: stroke 0.3s ease forwards;}
+.recommend .checkList li:nth-child(2) .checkmarkStoke.checking{animation: stroke 0.3s ease 0.4s forwards;}
+.recommend .checkList li:nth-child(3) .checkmarkStoke.checking{animation: stroke 0.3s ease 1s forwards;}
+.recommend .checkList li:nth-child(4) .checkmarkStoke.checking{animation: stroke 0.3s ease 1.6s forwards;}
+/************** recommend 끝 **************/
+
+/************** keypoint 시작 **************/
+.keypoint .heading.slideUp{
+  animation: slideUp 0.8s ease forwards;
+}
+.pointContainer > li:nth-child(1) .moreView{
+  animation: rotate 1.5s infinite;
+}
+.pointContainer > li:nth-child(2) .moreView{
+  animation: rotate 1.5s infinite 0.15s;
+}
+.pointContainer > li:nth-child(3) .moreView{
+  animation: rotate 1.5s infinite 0.3s;
+}
+.pointContainer > li:nth-child(4) .moreView{
+  animation: rotate 1.5s infinite 0.45s;
+}
+/************** keypoint 끝 **************/
+
+/************** factCheck 시작 **************/
+.factCheck .heading.slideUp{
+  animation: slideUp 0.8s ease forwards;
+}
+.factList li.slideUp:nth-child(1){animation: slideUp 0.8s ease forwards 0.2s;}
+.factList li.slideUp:nth-child(2){animation: slideUp 0.8s ease forwards 0.4s;}
+.factList li.slideUp:nth-child(3){animation: slideUp 0.8s ease forwards 0.6s;}
+.factList li.slideUp:nth-child(4){animation: slideUp 0.8s ease forwards 0.8s;}
+.factList li.slideUp:nth-child(5){animation: slideUp 0.8s ease forwards 1s;}
+/************** factCheck 끝 **************/
+
+/************** howToUse 시작 **************/
+.howToUse .heading.slideUp{
+  transform: translateY(5rem);
+  animation: slideUp 0.8s ease forwards;
+}
+.howToUse .tutorial li.slideUp:nth-child(1){animation: slideUp 0.8s ease forwards 0.4s;}
+.howToUse .tutorial li.slideUp:nth-child(2){animation: slideUp 0.8s ease forwards 0.7s;}
+.howToUse .tutorial li.slideUp:nth-child(3){animation: slideUp 0.8s ease forwards 1s;}
+/************** howToUse 끝 **************/
+
+
+ 
+@media (max-width: 768px){
+  /************** recommend 시작 **************/
+  .recommend .visualWrap{
+    width: var(--recResponwidth);
+    transform: translateY(5rem);
+  }
+  .recommend .visualWrap.slideUp{
+    animation: slideUp 0.8s ease forwards;
+  } 
+  /* 체크 애니메이션 */
+  .recommend .checkList li:nth-child(4) .checkmarkStoke.checking{animation: stroke 0.3s ease forwards;}
+  .recommend .checkList li:nth-child(1) .checkmarkStoke.checking{animation: stroke 0.3s ease 0.4s forwards;}
+  .recommend .checkList li:nth-child(2) .checkmarkStoke.checking{animation: stroke 0.3s ease 0.8s forwards;}
+  .recommend .checkList li:nth-child(3) .checkmarkStoke.checking{animation: stroke 0.3s ease 1.2s forwards;}
+  /************** recommend 끝 **************/
+}

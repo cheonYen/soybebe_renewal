@@ -1,0 +1,87 @@
+/************* max-width: 1250px 시작 *************/
+@media (max-width: 1250px){ 
+  /***** faq 시작 *****/
+  .tabMenu{
+    width: 90%;
+  }
+  /** faq 질답 리스트 시작 **/
+  .faqWrap{
+    padding: 1rem 2.5rem;
+  }
+  /** faq 질답 리스트 끝 **/
+  /***** faq 끝 *****/
+} 
+/************************************************/
+/************* max-width: 1250px 끝 *************/
+/************************************************/
+
+
+
+/**************************************************/
+/************* max-width: 1050px 시작 *************/
+/**************************************************/
+@media (max-width: 1050px){}
+/************************************************/
+/************* max-width: 1050px 끝 *************/
+/************************************************/
+
+
+
+/*************************************************/
+/************* max-width: 768px 시작 *************/
+/*************************************************/
+@media (max-width: 768px){
+  main{
+    overflow: hidden;
+  }
+  /***** faq 시작 *****/
+  .faq{
+    padding: 5rem 1rem;
+  }
+  .faq .heading p{
+    font-size: 1rem;
+  }
+  .tabMenu{
+    width: 95%; 
+    height: 40px;
+    line-height: 40px;
+  }
+  .tabMenu li a{
+    font-size: var(--h5);
+  }
+  /* faq 질답 리스트 시작 */
+  .faqWrap{
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 30px;
+  }
+  /* 중복 */
+  .question{
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+  }
+  .question span{
+    font-size: var(--h5);
+  }
+  .question p{
+    font-size: 1rem;
+  }
+  .question i{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .answer{
+    padding: 0 1.2rem 0 3.25rem;
+  }
+  .answer.open{
+    height: fit-content;
+    padding: 1rem 1.2rem 1rem 3.25rem;
+  }
+  .faqWrap ul li:last-child .answer{
+    border-radius: 0 0 20px 20px; 
+  }
+  /***** faq 끝 *****/
+}
+/***********************************************/
+/************* max-width: 768px 끝 *************/
+/***********************************************/

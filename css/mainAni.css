@@ -1,0 +1,63 @@
+/************** 중복 **************/
+.mainVisual .heading .slogan,
+.mainVisual .heading img,
+.goToStore ul li,
+.collaboBtn,
+.careLine .heading h2,
+.careLine .heading p,
+.mediaZone .heading,
+.faq .heading h2,
+.faq .heading p{
+  opacity: 0;
+  transform: translateY(2rem);
+}
+.collaboBanner .heading h2{
+  opacity: 0;
+  transform: translateX(-3rem);
+}
+/************** 중복 **************/
+
+
+/************** slideUp 시작 **************/
+.mainVisual .heading .slogan,
+.goToStore ul li.slideUp:first-child,
+.collaboBanner .heading h2.slideUp,
+.careLine .heading.slideUp h2,
+.mediaZone .heading.slideUp,
+.faq .heading.slideUp h2{
+  animation: slideUp 1s ease forwards;
+}
+
+/* 지연 */
+.mainVisual .heading img,
+.collaboBtn.slideUp,
+.careLine .heading.slideUp p,
+.faq .heading.slideUp p{
+  animation: slideUp 1s ease forwards 0.5s;
+}
+.goToStore ul li.slideUp:last-child{
+  animation: slideUp 1s ease forwards 0.3s;
+}
+
+/* 미디어쿼리 */
+@media (max-width: 768px){
+  .collaboBanner .heading h2{
+    transform: translateX(0);
+    transform: translateY(2rem);
+  }
+  .collaboBtn{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .goToStore ul li{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/************** slideUp 끝 **************/
+
+/***************** slideL2R 시작 *****************/
+.collaboBanner .heading h2.slideL2R{
+  animation: slideL2R 1s ease forwards;
+}
+/***************** slideL2R 끝 *****************/
